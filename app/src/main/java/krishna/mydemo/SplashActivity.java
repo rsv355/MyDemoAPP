@@ -1,7 +1,6 @@
 package krishna.mydemo;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
@@ -9,6 +8,7 @@ import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
 import krishna.mydemo.Helpers.PrefUtils;
+import krishna.mydemo.Login.LoginActivity;
 
 
 public class SplashActivity extends AwesomeSplash {

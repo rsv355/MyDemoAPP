@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context="krishna.mydemo.LoginActivity">
+    tools:context=".Login.LoginActivity">
 
     <LinearLayout
         android:gravity="center"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:gravity="center"
         android:hint="@string/hint_password"
         android:theme="@style/EditText"
