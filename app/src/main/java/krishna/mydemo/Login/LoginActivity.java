@@ -1,15 +1,18 @@
 package krishna.mydemo.Login;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import krishna.mydemo.MainActivity;
 import krishna.mydemo.R;
+import krishna.mydemo.Register.RegisterAcitivity;
 
-public class LoginActivity extends AppCompatActivity implements LoginView{
+public class LoginActivity extends AppCompatActivity implements LoginView,View.OnClickListener{
     private TextView txtRegister,txtLogin;
     private EditText etUserName,etPassword;
     private LoginPresenter presenter;
@@ -25,13 +28,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         presenter = new LoginPresenter(LoginActivity.this,this);
 
 
-        txtLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                presenter.doLogin();
-            }
-        });
 
     }
 
@@ -44,6 +40,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         txtRegister = (TextView)findViewById(R.id.txtRegister);
         etUserName = (EditText)findViewById(R.id.etUserName);
         etPassword = (EditText)findViewById(R.id.etPassword);
+
+        txtLogin.setOnClickListener(this);
+        txtRegister.setOnClickListener(this);
     }
 
     @Override
@@ -59,5 +58,16 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     @Override
     public void doLogin() {
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.txtLogin:
+                break;
+            case R.id.txtRegister:
+                startActivity(new Intent(LoginActivity.this, RegisterAcitivity.class));
+                break;
+        }
     }
 }

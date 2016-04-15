@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="krishna.mydemo.Register.RegisterAcitivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="@string/hint_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/user_logo"
+                android:id="@+id/imgProfile"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:hint="@string/hint_email"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/etName"
+                android:hint="@string/hint_name"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/etPassword"
+                android:hint="@string/hint_password"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/etCnfPassword"
+                android:hint="@string/hint_cnf_pass"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="number"
+                android:id="@+id/etAge"
+                android:hint="@string/hint_age"
+                android:theme="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="@string/hint_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdMale"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/male"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rdFeMale"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/female"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="@string/reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

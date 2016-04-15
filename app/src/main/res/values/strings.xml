@@ -4,4 +4,15 @@
     <string name="hint_id">Enter user name</string>
     <string name="hint_password">Enter password</string>
     <string name="register">Register YourSelf</string>
+
+     <string name="reg">REGISTER</string>
+
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_cnf_pass">Enter Confirm Password</string>
+    <string name="hint_name">Enter Name</string>
+    <string name="hint_age">Enter Age</string>
+    <string name="hint_photo">Select Profile Picture</string>
+    <string name="hint_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>

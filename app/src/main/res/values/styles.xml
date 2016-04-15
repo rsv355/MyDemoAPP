@@ -20,7 +20,8 @@
         <item name="colorControlHighlight">@color/colorAccent</item>
         <item name="android:textColorHint">@color/colorAccent</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:maxLength">10</item>
+        <item name="android:maxLength">30</item>
         <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>
