@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyDemoAPP</string>
+    <string name="login">LOGIN</string>
+    <string name="hint_id">Enter user name</string>
+    <string name="hint_password">Enter password</string>
+    <string name="register">Register YourSelf</string>
+</resources>
