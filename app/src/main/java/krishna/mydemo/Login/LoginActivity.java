@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import krishna.mydemo.MainActivity;
 import krishna.mydemo.R;
 import krishna.mydemo.Register.RegisterAcitivity;
 

@@ -9,6 +9,7 @@ import com.viksaa.sssplash.lib.model.ConfigSplash;
 
 import krishna.mydemo.Helpers.PrefUtils;
 import krishna.mydemo.Login.LoginActivity;
+import krishna.mydemo.Main.MainActivity;
 
 
 public class SplashActivity extends AwesomeSplash {

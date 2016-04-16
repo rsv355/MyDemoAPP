@@ -26,8 +26,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import krishna.mydemo.Helpers.PrefUtils;
-import krishna.mydemo.Login.LoginPresenter;
-import krishna.mydemo.MainActivity;
+import krishna.mydemo.Main.MainActivity;
 import krishna.mydemo.R;
 
 public class RegisterAcitivity extends AppCompatActivity implements View.OnClickListener,RegisterView {
@@ -56,7 +55,7 @@ public class RegisterAcitivity extends AppCompatActivity implements View.OnClick
     private void init() {
         dialog = new ProgressDialog(RegisterAcitivity.this);
         dialog.setMessage("Registering your account...");
-       // dialog.setCancelable(false);
+        dialog.setCancelable(false);
 
         imgProfile = (ImageView)findViewById(R.id.imgProfile);
         txtRegister = (TextView)findViewById(R.id.txtRegister);
