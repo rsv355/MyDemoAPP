@@ -6,11 +6,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import krishna.mydemo.Helpers.PrefUtils;
 import krishna.mydemo.Login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView txtEmail,txtName;
+    private ImageView imgProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
