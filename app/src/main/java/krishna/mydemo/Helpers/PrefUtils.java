@@ -29,4 +29,9 @@ public class PrefUtils {
             return false;
         }
     }
+
+    public static String deviceID(Context _ctx) {
+      String deviceID="abc";
+        return deviceID;
+    }
 }
