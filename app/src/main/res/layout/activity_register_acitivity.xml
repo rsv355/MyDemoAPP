@@ -53,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
+                android:maxLength="8"
                 android:inputType="textPassword"
                 android:id="@+id/etPassword"
                 android:hint="@string/hint_password"
@@ -60,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
+                android:maxLength="8"
                 android:inputType="textPassword"
                 android:id="@+id/etCnfPassword"
                 android:hint="@string/hint_cnf_pass"
@@ -67,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <EditText
+                android:maxLength="3"
                 android:inputType="number"
                 android:id="@+id/etAge"
                 android:hint="@string/hint_age"
@@ -88,6 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <RadioButton
+                        android:checked="true"
                         android:id="@+id/rdMale"
                         android:textColor="@color/colorAccent"
                         android:text="@string/male"
@@ -106,6 +110,7 @@
                 </RadioGroup>
 
             <TextView
+                android:id="@+id/txtRegister"
                 android:textSize="18dp"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
