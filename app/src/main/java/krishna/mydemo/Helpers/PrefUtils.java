@@ -7,6 +7,7 @@ package krishna.mydemo.Helpers;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.provider.Settings;
 
 public class PrefUtils {
 
@@ -31,7 +32,9 @@ public class PrefUtils {
     }
 
     public static String deviceID(Context _ctx) {
-      String deviceID="abc";
+      String deviceID= Settings.Secure.getString(_ctx.getContentResolver(),
+              Settings.Secure.ANDROID_ID);
+
         return deviceID;
     }
 }

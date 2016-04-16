@@ -224,6 +224,10 @@ public class RegisterAcitivity extends AppCompatActivity implements View.OnClick
             ByteArrayOutputStream bytes = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 90, bytes);
 
+            Uri tempUri = getImageUri(getApplicationContext(), bitmap);
+            imageFile = new File(getRealPathFromURI(tempUri));
+
+
             imgProfile.setImageBitmap(bitmap);
             isProfilePicSelected = true;
         } catch (Exception e) {
